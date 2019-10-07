@@ -1,16 +1,13 @@
-set_cache(UBINOS__UBICLIB__USE_STDIO_RETARGETING                                FALSE   BOOL)
-set_cache(UBINOS__BSP__USE_DTTY                                                 FALSE   BOOL)
-
-include(${PROJECT_UBINOS_DIR}/config/ubinos_stm3221geval_baremetal.cmake)
+include(${PROJECT_UBINOS_DIR}/config/ubinos_stm3221geval.cmake)
 
 include(${PROJECT_LIBRARY_DIR}/stm32cubef2/config/stm32cubef2.cmake)
 
 ####
 
 set(INCLUDE__APP TRUE)
-set(APP__NAME "mygpio_exti")
+set(APP__NAME "mygpio_exti2")
 
-get_filename_component(_tmp_source_dir "${CMAKE_CURRENT_LIST_DIR}/mygpio_exti" ABSOLUTE)
+get_filename_component(_tmp_source_dir "${CMAKE_CURRENT_LIST_DIR}/mygpio_exti2" ABSOLUTE)
 
 file(GLOB_RECURSE _tmp_sources
     "${_tmp_source_dir}/*.c"

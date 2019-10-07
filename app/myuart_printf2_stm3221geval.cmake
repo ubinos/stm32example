@@ -20,7 +20,7 @@ file(GLOB_RECURSE _tmp_sources
 
 set(PROJECT_APP_SOURCES ${PROJECT_APP_SOURCES} ${_tmp_sources})
 
-get_filename_component(_tmp_source_dir "${PROJECT_LIBRARY_DIR}/stm32cubef2/source/STM32Cube_FW_F2/Projects/${STM32CUBEF2__BOARD_NAME}/Examples/UART/UART_Printf" ABSOLUTE)
+get_filename_component(_tmp_source_dir "${PROJECT_LIBRARY_DIR}/stm32cubef2/source/STM32Cube_FW_F2/Projects/STM322xG_EVAL/Examples/UART/UART_Printf" ABSOLUTE)
 
 include_directories(${_tmp_source_dir}/Inc)
 
