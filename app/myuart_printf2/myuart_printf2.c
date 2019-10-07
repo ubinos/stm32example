@@ -47,7 +47,7 @@ int appmain(int argc, char *argv[]) {
 	//
 	printf("\n\n\r\n");
 	printf("================================================================================\r\n");
-	printf("myrtc2 (build time: %s %s)\r\n", __TIME__, __DATE__);
+	printf("myuart_printf2 (build time: %s %s)\r\n", __TIME__, __DATE__);
 	printf("================================================================================\r\n");
 	printf("\r\n");
 #if (UBINOS__UBICLIB__USE_MALLOC_RETARGETING == 1)
