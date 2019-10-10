@@ -1,6 +1,6 @@
 #include <ubinos.h>
 
-#if (INCLUDE__APP__mygpio_exti2 == 1)
+#if (INCLUDE__APP__mygpio_exti == 1)
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -30,7 +30,7 @@ int appmain(int argc, char *argv[]) {
 	//
 	printf("\n\n\r\n");
 	printf("================================================================================\r\n");
-	printf("mygpio_exti2 (build time: %s %s)\r\n", __TIME__, __DATE__);
+	printf("mygpio_exti (build time: %s %s)\r\n", __TIME__, __DATE__);
 	printf("================================================================================\r\n");
 	printf("\r\n");
 #if (UBINOS__UBICLIB__USE_MALLOC_RETARGETING == 1)
@@ -182,5 +182,5 @@ void EXTI15_10_IRQHandler(void) {
 	HAL_GPIO_EXTI_IRQHandler(KEY_BUTTON_PIN);
 }
 
-#endif /* (INCLUDE__APP__mygpio_exti2 == 1) */
+#endif /* (INCLUDE__APP__mygpio_exti == 1) */
 

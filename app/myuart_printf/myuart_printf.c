@@ -1,6 +1,6 @@
 #include <ubinos.h>
 
-#if (INCLUDE__APP__myuart_printf2 == 1)
+#if (INCLUDE__APP__myuart_printf == 1)
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -47,7 +47,7 @@ int appmain(int argc, char *argv[]) {
 	//
 	printf("\n\n\r\n");
 	printf("================================================================================\r\n");
-	printf("myuart_printf2 (build time: %s %s)\r\n", __TIME__, __DATE__);
+	printf("myuart_printf (build time: %s %s)\r\n", __TIME__, __DATE__);
 	printf("================================================================================\r\n");
 	printf("\r\n");
 #if (UBINOS__UBICLIB__USE_MALLOC_RETARGETING == 1)
@@ -213,5 +213,5 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef *huart) {
 
 }
 
-#endif /* (INCLUDE__APP__myuart_printf2 == 1) */
+#endif /* (INCLUDE__APP__myuart_printf == 1) */
 

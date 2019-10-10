@@ -5,9 +5,9 @@ include(${PROJECT_LIBRARY_DIR}/stm32cubef2/config/stm32cubef2.cmake)
 ####
 
 set(INCLUDE__APP TRUE)
-set(APP__NAME "mygpio_exti2")
+set(APP__NAME "mygpio_exti")
 
-get_filename_component(_tmp_source_dir "${CMAKE_CURRENT_LIST_DIR}/mygpio_exti2" ABSOLUTE)
+get_filename_component(_tmp_source_dir "${CMAKE_CURRENT_LIST_DIR}/mygpio_exti" ABSOLUTE)
 
 file(GLOB_RECURSE _tmp_sources
     "${_tmp_source_dir}/*.c"
