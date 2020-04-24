@@ -27,6 +27,7 @@ int appmain(int argc, char *argv[]) {
 	int r;
 
 	HAL_Init();
+	ubik_settickhookfunc(HAL_IncTick);
 
 	UartHandle.Instance = USARTx;
 
